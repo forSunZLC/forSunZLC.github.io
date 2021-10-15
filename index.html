@@ -1,48 +1,60 @@
 <!DOCTYPE html>
-<meta charset="utf-8"> 
 <html>
 	<head>
-		<link rel="shortcut icon" href="https://forsunzlc.github.io/logo.ico">
-		<link rel="Bookmark" href="https://forsunzlc.github.io/logo.ico">
-		<title>SunZLC的网站</title>
-		<!--下方为CSS代码-->
-		<style>
-			body{			
-				background-image: url("https://forsunzlc.github.io/beijing.png");	
-				width:100%;
-				height: auto;
-				background-size:100% 100%;
-	      			background-repeat:no-repeat;
-				background-attachment: fixed;
-			}
-			.line{
-				border-radius:10px 10px 10px 10px;
-				width: 80%;
-				height: 200px;
-				margin: 0px auto;
-				background-color:rgba(255,255,255,0.3);
-			}
-			.bigger{
-				font-size:60px;
-				color:white;
-			}
-			.smaller{
-				font-size:45px;
-			}
-			a{
-				text-decoration:none;
-			}
-		</style>
-		<!--以上为CSS代码-->
+	<style>
+	body {
+		margin:0;		
+		background-image: url("./img/index.png");	
+		width:100%;
+		height: auto;
+		background-size:100% 100%;
+		background-repeat:no-repeat;
+		background-attachment: fixed;
+	}
+
+	ul {
+	  list-style-type: none;
+	  margin: 0;
+	  padding: 0;
+	  overflow: hidden;
+	  background-color: #333;
+	  position: fixed;
+	  top: 0;
+	  width: 100%;
+	}
+
+	li {
+	  float: left;
+	}
+
+	li a {
+	  display: block;
+	  color: white;
+	  text-align: center;
+	  padding: 14px 16px;
+	  text-decoration: none;
+	}
+
+	li a:hover:not(.active) {
+	  background-color: #111;
+	}
+
+	.active {
+	  background-color: :;AF50;
+	}
+	</style>
 	</head>
 	<body>
-		<!--条数是从大到小的-->
-		<p style="font-size:80px;  color:yellow; text-align:center;"><b>&copy;</b><b style="font-size:80px;  color:white; text-align:center;">SunZLC</b></p>
-		<!--第1条-->
-		<div class="line">	
-			<a href="https://forsunzlc.github.io/things/000001.html"><div class="bigger">&nbsp;莫万轩的黑历史</div></a>
-			<a href="https://forsunzlc.github.io/things/000001.html"><div class="smaller" style="color:pink">&nbsp;嘿嘿嘿....</div></a>
-		</div>	
-		<br><br>
+
+		<ul>
+		  <li><a class="active" href="#home">Home</a></li>
+		  <li><a href="#news">News</a></li>
+		  <li><a href="#contact">Contact</a></li>
+		  <li><a href="#about">About</a></li>
+		</ul>
+
+		<div style="padding:20px;margin-top:30px;">
+
+		</div>
 	</body>
 </html>
